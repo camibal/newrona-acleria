@@ -1,0 +1,259 @@
+.color-banner {
+    background: #2e4257 !important;
+}
+
+.color-banner2 {
+    background: #7d8965 !important;
+}
+
+.color-banner3 {
+    background: #eab846 !important;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo-acleria {
+    position: relative;
+    left: 4%;
+    top: 2%;
+    color: #fff;
+}
+
+.row-animation {
+    height: 100%;
+}
+
+.size-col {
+    height: 100%;
+}
+
+/* nav top */
+.ul-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #000;
+    /* padding-right: 7%; */
+    display: flex;
+    justify-content: center;
+}
+
+.li-nav {
+    float: right;
+}
+
+.li-nav a {
+    display: block;
+    color: #57575E;
+    text-align: end;
+    padding: 16px 30px 16px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.fa-angle-double-up {
+    padding-top: 10%;
+    text-align: center;
+    width: 3rem;
+    height: 2.5rem;
+    font-size: 1.7rem;
+    border: 1px #fff dashed;
+    border-radius: 50%;
+}
+
+.fa-shopping-cart{
+    padding-top: 8%;
+    text-align: center;
+    width: 2.2rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    border: solid 2px #566E7D;
+    border-radius: 50%;
+    color: #566E7D;
+}
+
+.li-nav a:hover {
+    color: #57575e98;
+}
+
+/* nav bottom */
+.ul-nav-bottom {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+    left: 8%;
+}
+
+.li-nav-bottom {
+    float: left;
+}
+
+.li-nav-bottom a {
+    display: block;
+    color: #fff;
+    text-align: end;
+    padding: 16px 40px 16px 40px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.li-nav-bottom a:hover {
+    color: rgba(255, 255, 255, 0.618);
+}
+
+/* Animacion columna */
+
+.col-animation {
+    animation-duration: 1s;
+    animation-name: slideinSection1;
+    animation-delay: unset;
+}
+
+.col-animation-2 {
+    animation-duration: 1s;
+    animation-name: slideinSection2;
+}
+
+/* Animacion columna imagen */
+
+.img-animation-section1 {
+    position: absolute;
+    z-index: 10;
+    top: 11%;
+    left: 17.5rem;
+    animation-duration: 2s;
+    animation-name: slideinImgSection1;
+}
+
+.img-animation-section2 {
+    position: absolute;
+    z-index: 10;
+    top: 13%;
+    left: 17.5rem;
+    animation-duration: 2s;
+    animation-name: slideinImgSection2;
+}
+
+.width-animation {
+    width: 85rem;
+    height: 42rem;
+    animation-duration: 2s;
+    animation-name: widthImg;
+    object-fit: cover;
+}
+
+.width-animation-section2 {
+    width: 85rem;
+    height: 42rem;
+    animation-duration: 2s;
+    animation-name: widthImgSection2;
+    object-fit: cover;
+}
+
+/* Animacion columna */
+
+@keyframes slideinSection1 {
+    from {
+        transform: translateX(-100%);
+        /* opacity: 0; */
+    }
+
+    to {
+        transform: translateX(0%);
+        /* opacity: 1; */
+    }
+}
+
+@keyframes slideinSection2 {
+    from {
+        transform: translateY(100%);
+        /* opacity: 0; */
+    }
+
+    to {
+        transform: translateY(0%);
+        /* opacity: 1; */
+    }
+}
+
+/* Animacion columna imagen */
+
+@keyframes slideinImgSection1 {
+    from {
+        transform: translateX(-50%);
+        /* opacity: 0; */
+    }
+
+    to {
+        transform: translateX(0%);
+        /* opacity: 1; */
+    }
+}
+
+@keyframes slideinImgSection2 {
+    from {
+        transform: translateY(100%);
+        /* opacity: 0; */
+    }
+
+    to {
+        transform: translateY(0%);
+        /* opacity: 1; */
+    }
+}
+
+/* width animacion */
+@keyframes widthImg {
+    from {
+        width: 1px;
+        height: 42rem;
+        position: absolute;
+        z-index: 10;
+        top: 13%;
+        left: 15%;
+        /* opacity: 0; */
+    }
+
+    to {
+        width: 85rem;
+        height: 42rem;
+        position: absolute;
+        z-index: 10;
+        top: 13%;
+        left: 15%;
+        /* opacity: 1; */
+    }
+}
+
+@keyframes widthImgSection2 {
+    from {
+        width: 85rem;
+        height: 1px;
+        position: absolute;
+        z-index: 10;
+        top: 13%;
+        left: 15%;
+        /* opacity: 0; */
+    }
+
+    to {
+        width: 85rem;
+        height: 42rem;
+        position: absolute;
+        z-index: 10;
+        top: 13%;
+        left: 15%;
+        /* opacity: 1; */
+    }
+}
